@@ -1,0 +1,48 @@
+import java.util.*;
+import java.io.*;
+
+public class QuoteCLI{
+  private ArrayList<String> quoteList;
+  private ArrayList<String> searchList;
+  
+  public void printMenu(){
+    System.out.println("WELCOME TO QUOTE-CLI\n\n1)Search\n2)Get random quote\n3)Exit application\n");
+  }
+  
+  public void printRecentSearches(){
+    if (searchList.isEmpty()){
+      System.out.println("\n--------------------\n|No recent searches|\n--------------------\n");
+      return;
+    }
+    System.out.println(searchList);
+  }
+  
+  public static void main(String[] args){
+    Scanner sc = new Scanner(System.in);
+    Integer choice;
+    while (choice!=3){
+      printMenu();
+      printRecentSearches();
+      choice = sc.nextInt();
+      if (choice==1)
+        doSearch();
+      else if (choice==2)
+        doRandom();
+      else if (choice==3){
+        System.out.println("\"Thanks for stopping by\"-James W. Edwards\n");
+        exit();
+      }
+      else
+        System.out.println("invalid choice. try again\n");
+    }
+  }
+  
+  public void doSearch(){
+    
+  }
+  
+  public void doRandom(){
+    
+  }
+  
+}

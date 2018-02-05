@@ -86,14 +86,4 @@ public class QuoteList
    {
       return quoteArray.get (randomGen.nextInt (quoteArray.size()));
    }
-   
-   public String toString(){
-     String result = "";
-     if (quoteArray==null || quoteArray.isEmpty()) return result;
-     for (Quote quote : quoteArray){
-       result += quote.toString();
-       result += ",\n";
-     }
-     return result;
-   }
 }
