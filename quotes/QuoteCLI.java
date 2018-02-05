@@ -17,7 +17,7 @@ public class QuoteCLI{
   }
   
   public static void printMenu(){
-    System.out.println("WELCOME TO QUOTE-CLI\n\n1)Search\n2)Get random quote\n3)Exit application\n");
+    System.out.println("MAIN MENU:\n1)Search\n2)Get random quote\n3)Exit application\n");
   }
   
   public static void printRecentSearches(){
@@ -31,6 +31,7 @@ public class QuoteCLI{
   
   public static void main(String[] args){
     init();
+    System.out.println("WELCOME TO QUOTE-CLI\n\n");
     Scanner sc = new Scanner(System.in);
     Integer choice = 0;
     while (choice!=3){

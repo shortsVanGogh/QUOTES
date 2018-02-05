@@ -89,7 +89,7 @@ public class QuoteList
    
    public String toString(){
      String result = "";
-     if (quoteArray==null || quoteArray.isEmpty()) return result;
+     if (quoteArray==null || quoteArray.isEmpty()) return "[empty]";
      for (Quote quote : quoteArray){
        result += quote.toString();
        result += ",\n";
